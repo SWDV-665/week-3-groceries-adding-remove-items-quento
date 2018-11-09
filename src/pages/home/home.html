@@ -6,7 +6,7 @@
 
 <ion-content padding>
   <ion-fab top right edge>
-    <button ion-fab mini><ion-icon name="add"></ion-icon></button>    
+    <button (click)="addItem()" ion-fab mini><ion-icon name="add"></ion-icon></button>    
   </ion-fab>
   <ion-list>  
     <ion-item-sliding *ngFor="let item of items">
