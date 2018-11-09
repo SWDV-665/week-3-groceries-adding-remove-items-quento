@@ -1,6 +1,6 @@
 # Week 2 - Groceries App
 
-# Adding and Removing items
+## Adding and Removing items
 
 As discussed in the video, the current status of the app should do add and delete operations.
 
