@@ -34,15 +34,19 @@ export class HomePage {
 
   }
 
-  removeItem(item){
-    console.log("Removing item .." + item.name);
+  removeItem(item, index){
+    // Troubleshooting
+    console.log("Deleting item .." + item.name, index);
     
     // Show item removal message (toast)
     const toast = this.toastCtrl.create({
-      message: 'Removing item ' + item.name,
+      message: 'Deleting item - ' + item.name + " ...",
       duration: 3000
     });
     toast.present();
+
+    // Delete item from items array
+    this.items.splice(index, 1);
     
   }
 
@@ -76,6 +80,8 @@ export class HomePage {
           text: 'Save',
           handler: data => {
             console.log('Saved clicked', data);
+            
+            // Add item to array
             this.items.push(data);
 
           }
