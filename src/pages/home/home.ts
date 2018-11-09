@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  title = "Grocery List";
+  title = "Grocery";
 
   items = [
     {
@@ -23,7 +23,7 @@ export class HomePage {
       quantity: 3
     },
     {
-      name: "Grapes",
+      name: "Grapes", 
       quantity: 5
     }
   ];
